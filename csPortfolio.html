@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Notes Interface</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="initial-screen" class="notes-app">
+        <div class="title-bar">
+            <div class="buttons">
+                <span class="close"></span>
+                <span class="minimize"></span>
+                <span class="maximize"></span>
+            </div>
+            <div class="title">Portfolio Terminal</div>
+        </div>
+        <div id="output" class="content"></div>
+        <div class="input-container">
+            <span class="prompt">user@portfolio:~$</span>
+            <input type="text" id="input" autofocus />
+        </div>
+    </div>
+
+    <div id="notes-interface" class="notes-app" style="display: none;">
+        <div class="title-bar">
+            <div class="buttons">
+                <span class="close"></span>
+                <span class="minimize"></span>
+                <span class="maximize"></span>
+            </div>
+            <div class="title">Portfolio</div>
+        </div>
+        <div class="main">
+            <nav class="sidebar">
+                <ul>
+                    <li><a href="#" data-section="AboutMe">About Me</a></li>
+                    <li><a href="#" data-section="Projects">Projects</a></li>
+                    <li><a href="#" data-section="Education">Education</a></li>
+                    <li><a href="#" data-section="Skills">Skills</a></li>
+                    <li><a href="#" data-section="Experience">Experience</a></li>
+                    <li><a href="#" data-section="Summary">Summary</a></li>
+                </ul>
+            </nav>
+            <div id="main-content" class="content">
+                <h2>Welcome to my portfolio!</h2>
+                <p>Select a section from the navigation bar or type a command to learn more.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
